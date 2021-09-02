@@ -34,6 +34,7 @@ const transfer = data => {
 }
 // Correction
 const correction = (data,data2) => {
+    console.log(data2.publisher)
     const showSection = document.getElementById('show');
     if(data.includes('title') && data.includes('author_name') && data.includes('author_key') && data.includes('first_publish_year') && data.includes('cover_i') && data.includes('publisher')){
         const newDiv = document.createElement('div');
@@ -47,6 +48,7 @@ const correction = (data,data2) => {
                 <p>Author-Key: ${data2.author_key[0]}</p>
                 <button onclick="details('${data2.author_key[0]}')">Author/Details</button>
                 <p>First-Published: ${data2.first_publish_year}</p>
+                <p>Publisher: ${data2.publisher[0]}</p>
             </div>
         </div>
         `
