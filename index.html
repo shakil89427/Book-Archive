@@ -5,11 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Books</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
-    Books
+    <section class="text-center bg-info mx-auto pt-3">
+        <input id="input" class="border-1 py-1 px-3 rounded-1" type="text">
+        <button onclick="main()" class="text-white py-1 px-2 rounded-2 btn-secondary">Search</button>
+        <p class="mt-2">Total books found: <span id="total"></span> </p>
+    </section>
+    
+        <h2 id="spiner" class="text-center" style="display: none;">Loading...</h2>
+
+    <section id="author" class="w-25 mx-auto text-center">
+        
+    </section>
+
+    <section id="show" class="row mx-auto p-2 g-2">
+            
+    </section>
 
     <script src="app.js"></script>
 </body>
