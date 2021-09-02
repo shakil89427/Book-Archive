@@ -27,10 +27,10 @@ const transfer = data => {
         error('block')
     }
     const value = data.docs.slice(0,50);
-    for (const book of value){
+    value.forEach(book => {
         const bookKeys = Object.keys(book);
         correction(bookKeys,book)
-    }
+    });
 }
 // Correction
 const correction = (data,data2) => {
