@@ -34,7 +34,6 @@ const transfer = data => {
 }
 // Correction
 const correction = (data,data2) => {
-    console.log(data2.publisher)
     const showSection = document.getElementById('show');
     if(data.includes('title') && data.includes('author_name') && data.includes('author_key') && data.includes('first_publish_year') && data.includes('cover_i') && data.includes('publisher')){
         const newDiv = document.createElement('div');
